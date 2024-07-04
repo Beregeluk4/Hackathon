@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        #recognized-text {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            min-height: 100px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Speech to Text</h1>
+    <label for="language">Choose a language:</label>
+    <select id="language">
+        <option value="en-US">English (US)</option>
+        <option value="nl-NL">Dutch (Netherlands)</option>
+        <!-- Add more languages as needed -->
+    </select>
+    <button id="start-btn">Start Speaking</button>
+    <button id="stop-btn">Stop Speaking</button>
+    <div id="output"></div>
+    <div id="recognized-text"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
